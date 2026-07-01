@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MetalCalc Pro - Metal Weight Calculator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalCalc Pro - Metal Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>MetalCalc Pro</h1>
-  <p>Professional Metal Weight Calculator</p>
+    <h1>⚙️ MetalCalc Pro</h1>
+    <p>Professional Metal Weight Calculator</p>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <label>Material</label>
-  <select id="material">
-    <option value="8.50">Brass</option>
-    <option value="8.96">Copper</option>
-    <option value="7.85">Steel</option>
-    <option value="2.70">Aluminum</option>
-  </select>
+    <div class="card">
 
-  <label>Diameter (mm)</label>
-  <input type="number" id="diameter" placeholder="Enter Diameter">
+        <h2>Round Bar Weight Calculator</h2>
 
-  <label>Length (mm)</label>
-  <input type="number" id="length" placeholder="Enter Length">
+        <label>Material</label>
 
-  <button onclick="calculateWeight()">Calculate Weight</button>
+        <select id="material">
+            <option value="8.50">Brass</option>
+            <option value="8.96">Copper</option>
+            <option value="7.85">Steel</option>
+            <option value="2.70">Aluminum</option>
+        </select>
 
-  <h2 id="result">Weight: 0.000 kg</h2>
+        <label>Diameter (mm)</label>
+        <input type="number" id="diameter" placeholder="Example: 25">
 
-</div>
+        <label>Length (mm)</label>
+        <input type="number" id="length" placeholder="Example: 1000">
+
+        <button onclick="calculateWeight()">
+            Calculate Weight
+        </button>
+
+        <h2 id="result">
+            Weight : 0.000 kg
+        </h2>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2026 MetalCalc Pro | Made for Engineers & Manufacturers
+</footer>
 
 <script src="script.js"></script>
 
