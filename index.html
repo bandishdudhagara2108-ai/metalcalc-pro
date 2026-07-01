@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetalCalc Pro - Metal Weight Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>MetalCalc Pro</h1>
+  <p>Professional Metal Weight Calculator</p>
+</header>
+
+<div class="container">
+
+  <label>Material</label>
+  <select id="material">
+    <option value="8.50">Brass</option>
+    <option value="8.96">Copper</option>
+    <option value="7.85">Steel</option>
+    <option value="2.70">Aluminum</option>
+  </select>
+
+  <label>Diameter (mm)</label>
+  <input type="number" id="diameter" placeholder="Enter Diameter">
+
+  <label>Length (mm)</label>
+  <input type="number" id="length" placeholder="Enter Length">
+
+  <button onclick="calculateWeight()">Calculate Weight</button>
+
+  <h2 id="result">Weight: 0.000 kg</h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
